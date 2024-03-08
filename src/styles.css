@@ -66,8 +66,45 @@ header h2 {
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
   grid-gap: 60px;
+}
+
+.grid-why-swanage {
+  grid-template-columns: 1fr 1fr;
+  margin: 50px 20px;
+}
+
+.grid-footer {
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
+main h3 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  text-align: left;
+  color: var(--font-color);
+  opacity: 0.3;
+  margin: 0;
+}
+
+main h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: left;
+  color: var(--font-color);
+  margin: 0;
+}
+
+main p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  color: var(--font-color);
+  opacity: 0.7;
 }
 
 section {
@@ -75,6 +112,9 @@ section {
   margin: 0 auto;
 }
 
+.responsive-image {
+  max-width: 100%;
+}
 footer {
   background-image: linear-gradient(
       rgba(39, 32, 68, 0.6),
@@ -123,5 +163,17 @@ footer p {
   .primary-button {
     font-size: 11px;
     padding: 12px 25px;
+  }
+
+  .section-1-image {
+    display: none;
+  }
+  .grid-why-swanage {
+    grid-template-columns: 1fr;
+    margin: 25px 10px;
+  }
+  .grid-footer {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
   }
 }
