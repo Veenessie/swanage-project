@@ -6,11 +6,6 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.container {
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("/images/hero.jpg");
@@ -64,6 +59,21 @@ header h2 {
   opacity: 0.7;
 }
 
+.secondary-button {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 3px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background: #462cb2;
+  padding: 16px 32px;
+  display: block;
+  margin: 32px 20px 40px 20px;
+  text-transform: uppercase;
+}
+
 .grid {
   display: grid;
   grid-gap: 60px;
@@ -72,6 +82,12 @@ header h2 {
 .grid-why-swanage {
   grid-template-columns: 1fr 1fr;
   margin: 50px 20px;
+}
+
+.card-grid {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+  margin: 0 30px;
 }
 
 .grid-footer {
@@ -83,7 +99,6 @@ main h3 {
   font-weight: 700;
   line-height: 1.5;
   letter-spacing: 5px;
-  text-align: left;
   color: var(--font-color);
   opacity: 0.3;
   margin: 0;
@@ -106,14 +121,63 @@ main p {
   color: var(--font-color);
   opacity: 0.7;
 }
+.responsive-image {
+  max-width: 100%;
+}
 
 section {
-  max-width: 1200px;
   margin: 0 auto;
 }
 
-.responsive-image {
-  max-width: 100%;
+.header-section-1 {
+  text-align: left;
+}
+
+.section-2 {
+  background: #f8f8f8;
+}
+
+.section-2 h2,
+.section-2 h3 {
+  text-align: center;
+}
+
+.section-2-header {
+  padding: 30px 0;
+}
+
+.card {
+  margin-bottom: 35px;
+  background: white;
+}
+.card h4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: left;
+  color: var(--font-color);
+  padding: 10px 20px 10px 20px;
+  margin: 0;
+}
+
+.card p {
+  padding: 0 20px 10px 20px;
+  margin: 0;
+}
+
+.card h5 {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0em;
+  text-align: left;
+  padding: 10px 20px 10px 20px;
+  margin: 0;
+  color: var(--font-color);
+}
+
+.card .responsive-image {
+  max-width: 50%;
 }
 footer {
   background-image: linear-gradient(
@@ -171,6 +235,10 @@ footer p {
   .grid-why-swanage {
     grid-template-columns: 1fr;
     margin: 25px 10px;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
   }
   .grid-footer {
     grid-template-columns: 1fr;
