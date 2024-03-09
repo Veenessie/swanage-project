@@ -238,7 +238,7 @@ footer p {
   opacity: 0.7;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
   header h3 {
     font-size: 12px;
   }
@@ -275,6 +275,16 @@ footer p {
   .pintrest-grid {
     grid-template-columns: 1fr;
   }
+
+  .pintrest-grid iframe {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+  .pintrest-grid-container {
+    padding: 0;
+    margin-top: 20px;
+  }
   .card img {
     display: none;
   }
@@ -285,8 +295,5 @@ footer p {
   .grid-footer {
     grid-template-columns: 1fr;
     padding: 0 20px;
-  }
-  .hidden-image-on-sm {
-    display: none;
   }
 }
