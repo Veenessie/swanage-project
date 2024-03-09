@@ -90,6 +90,11 @@ header h2 {
   margin: 0 30px;
 }
 
+.pintrest-grid {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+}
+
 .grid-footer {
   grid-template-columns: 1fr 2fr 2fr;
 }
@@ -187,6 +192,20 @@ section {
   color: var(--font-color);
 }
 
+.pintrest-grid-container {
+  padding: 20px 120px 40px 120px;
+  margin: 0 auto;
+}
+
+.section-3 h3,
+.section-3 h2 {
+  text-align: center;
+}
+
+.section-3-header {
+  margin-top: 35px;
+}
+
 footer {
   background-image: linear-gradient(
       rgba(39, 32, 68, 0.6),
@@ -252,6 +271,10 @@ footer p {
   .card-header-grid {
     grid-template-columns: 1fr;
   }
+
+  .pintrest-grid {
+    grid-template-columns: 1fr;
+  }
   .card img {
     display: none;
   }
@@ -262,5 +285,8 @@ footer p {
   .grid-footer {
     grid-template-columns: 1fr;
     padding: 0 20px;
+  }
+  .hidden-image-on-sm {
+    display: none;
   }
 }
