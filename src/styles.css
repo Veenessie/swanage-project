@@ -150,6 +150,17 @@ section {
   margin-bottom: 35px;
   background: white;
 }
+.card-header-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0;
+}
+
+.embed {
+  width: 100%;
+  aspect-ratio: 1 /1;
+}
+
 .card h4 {
   font-size: 24px;
   font-weight: 700;
@@ -157,7 +168,7 @@ section {
   text-align: left;
   color: var(--font-color);
   padding: 10px 20px 10px 20px;
-  margin: 0;
+  margin: 15px 0 0 0;
 }
 
 .card p {
@@ -176,9 +187,6 @@ section {
   color: var(--font-color);
 }
 
-.card .responsive-image {
-  max-width: 50%;
-}
 footer {
   background-image: linear-gradient(
       rgba(39, 32, 68, 0.6),
@@ -239,6 +247,17 @@ footer p {
 
   .card-grid {
     grid-template-columns: 1fr;
+  }
+
+  .card-header-grid {
+    grid-template-columns: 1fr;
+  }
+  .card img {
+    display: none;
+  }
+
+  .embed {
+    aspect-ratio: 16/9;
   }
   .grid-footer {
     grid-template-columns: 1fr;
